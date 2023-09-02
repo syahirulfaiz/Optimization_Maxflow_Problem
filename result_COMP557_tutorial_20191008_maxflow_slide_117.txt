@@ -1,0 +1,77 @@
+*************************************************************
+
+   NEOS Server Version 5.0
+   Job#     : 7599466
+   Password : TmihynwO
+   User     : None
+   Solver   : lp:Gurobi:LP
+   Start    : 2019-10-13 04:48:11
+   End      : 2019-10-13 04:48:13
+   Host     : NEOS HTCondor Pool
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information  for any particular purpose.
+*************************************************************
+/opt/gurobi/latest/linux64/lib:/opt/gurobi/latest/linux64/lib:/opt/rh/python27/root/usr/lib64
+Load Avg: ( 7.99 , 7.92 , 7.56 )
+Read LP format model from file model.lp
+Reading time = 0.00 seconds
+: 6 rows, 13 columns, 22 nonzeros
+
+
+Checking threads settings... (NEOS allows a maximum of 4 threads)
+Changed value of parameter Threads to 4
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Optimize a model with 6 rows, 13 columns and 22 nonzeros
+Variable types: 0 continuous, 13 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+00, 1e+01]
+  RHS range        [0e+00, 0e+00]
+Found heuristic solution: objective -0.0000000
+Presolve removed 1 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 5 rows, 11 columns, 18 nonzeros
+Variable types: 0 continuous, 11 integer (0 binary)
+
+Root relaxation: objective 4.100000e+01, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      41.0000000   41.00000  0.00%     -    0s
+
+Explored 0 nodes (5 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 24 available processors)
+
+Solution count 2: 41 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.100000000000e+01, best bound 4.100000000000e+01, gap 0.0000%
+
+
+********** Begin .sol file *************
+
+# Objective value = 41
+flow_sa 5
+flow_sb 4
+flow_ab 3
+flow_ae 0
+flow_af 2
+flow_bc 0
+flow_be 7
+flow_fe 2
+flow_fg 0
+flow_ec 3
+flow_eg 6
+flow_ct 3
+flow_gt 6
+
+********** End .sol file ***************
+
+
