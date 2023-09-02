@@ -11,6 +11,8 @@ destination node $t \in V$
 
 Find $s-t$ flow of maximum throughput that satisfies capacity constraints: $u(a)$ limits the amount of flow that can be sent through arc $a$
 
+![maxflow_question](https://github.com/syahirulfaiz/Optimization_Maxflow_Problem/assets/6794509/600ddc4b-1d72-4d5b-9489-b21f986b4dc7)
+
 
 ## APPROACH ##
 definition of variable(s) :
@@ -36,9 +38,11 @@ Throughput_a :
 <=>	flow_sa - flow_ab - (flow_ae + flow_af) = 0
 <=>	flow_sa - flow_ab - flow_ae - flow_af) = 0      
 
-
 3. The 'Bounds' section lists all of the limits of the capacity of each arc. For example, if I want to define the amount of flow which can go through arc s to a, with the limit of capacity 9 (as stated in slide 117) :
 
 0 <= flow_sa <= 5 
+
+
+![maxflow_solution](https://github.com/syahirulfaiz/Optimization_Maxflow_Problem/assets/6794509/29f76385-23d4-433d-adfe-6fd1591ca72b)
 
 
